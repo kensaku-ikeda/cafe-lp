@@ -1,3 +1,5 @@
 {
-  "editor.inlineSuggest.enabled": false
+  "editor.inlineSuggest.enabled": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false
 }
