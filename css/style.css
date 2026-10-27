@@ -1,3 +1,5 @@
+/* ヘッダー */
+
 header {
   background-color: #faf6ec;
   border-bottom: 2px solid #392e26;
@@ -38,6 +40,7 @@ header {
   height: 100vh;
   display: flex;
   align-items: flex-end;
+  border-bottom: 2px solid #392e26;
 }
 
 .main-content {
@@ -63,6 +66,44 @@ header {
 
 .container {
   max-width: 1200px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
+
+.sub-content {
+  background-color: #faf6ec;
+  border-bottom: 2px solid #392e26;
+}
+
+.sub-content img {
+  border: 3px solid #392e26;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.content-title {
+  padding-top: 80px;
+}
+
+.content-heading {
+  padding-bottom: 20px;
+}
+
+.coffee-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coffee-card {
+  width: 30%;
+}
+
+.coffee-card p {
+  font-size: 12px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
