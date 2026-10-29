@@ -1,9 +1,18 @@
-/* ヘッダー */
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #392e26;
+}
 
+/* ヘッダー */
 header {
   background-color: #faf6ec;
   border-bottom: 2px solid #392e26;
   padding: 4px 0;
+  width: 100%;
+  position: fixed;
+  opacity: 0.9;
 }
 
 .header-wrapper {
@@ -18,13 +27,8 @@ header {
   gap: 40px;
 }
 
-.header-nav a {
-  color: #392e26;
-}
-
 .header-title {
   display: flex;
-  color: #392e26;
   font-family: "Zen Old Mincho", serif;
   font-size: 18px;
 }
@@ -74,6 +78,7 @@ header {
 .sub-content {
   background-color: #faf6ec;
   border-bottom: 2px solid #392e26;
+  height: 1000px;
 }
 
 .sub-content img {
@@ -81,8 +86,6 @@ header {
   border-radius: 8px;
   box-sizing: border-box;
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
 }
 
 .content-title {
@@ -108,3 +111,30 @@ header {
   text-align: center;
 }
 
+.coffee-card img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.roaster-card {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.roaster-card img {
+  width: 50%;
+}
+
+.roaster-text {
+  text-align: left;
+  padding: 50px;
+}
+
+.roaster-text h2 {
+  margin: 12px 0;
+}
+
+.roaster-text span {
+  color: rgba(255, 0, 0, 0.634);
+}
