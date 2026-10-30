@@ -78,7 +78,7 @@ header {
 .sub-content {
   background-color: #faf6ec;
   border-bottom: 2px solid #392e26;
-  height: 1000px;
+  height: 1050px;
 }
 
 .sub-content img {
@@ -119,11 +119,12 @@ header {
 .roaster-card {
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .roaster-card img {
   width: 50%;
+  aspect-ratio: 16/9;
 }
 
 .roaster-text {
@@ -137,4 +138,114 @@ header {
 
 .roaster-text span {
   color: rgba(255, 0, 0, 0.634);
+}
+
+.workSpace {
+  height: 1000px;
+  background-color: #f6eddd;
+  border-bottom: 2px solid #392e26;
+}
+
+.workspace-heading {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.feature-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.feature {
+  border: 2px solid #392e26;
+  background-color: #f9f5eb;
+  width: 25%;
+  margin: 0 20px;
+  padding: 30px;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #392e26;
+  border-radius: 50%;
+}
+
+.feature p {
+  font-size: 12px;
+  color: #99623b;
+  padding-top: 6px;
+}
+
+.library {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  padding: 20px 0;
+}
+
+.library img {
+  width: 50%;
+  border: 3px solid #392e26;
+  border-radius: 8px;
+  aspect-ratio: 16/9;
+}
+
+.library-text {
+  text-align: left;
+  padding: 50px;
+}
+
+.library-text h2 {
+  margin: 12px 0;
+}
+
+.library-text span {
+  color: rgba(255, 0, 0, 0.634);
+}
+
+footer {
+  background-color: #3a2e26;
+  color: #f6eddd;
+  height: 200px;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.footer-list ul {
+  display: flex;
+}
+
+.footer-list li {
+  margin: 0 30px;
+  list-style: none;
+}
+
+.footer-list span {
+  border-bottom: 1px solid #f6eddd;
+}
+
+.copy-right {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer-right {
+  margin: 0 auto;
+}
+
+.sns-icon img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
 }
