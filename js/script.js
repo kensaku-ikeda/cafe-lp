@@ -1,4 +1,4 @@
-const coffeePack = [
+const coffeePackList = [
   "bluemountain",
   "brazil",
   "colombia",
@@ -7,20 +7,20 @@ const coffeePack = [
   "peru",
 ];
 
-function randomNumber() {
-  return Math.floor(Math.random() * coffeePack.length);
+function getRandomNumber() {
+  return Math.floor(Math.random() * coffeePackList.length);
 }
 
-function randomCoffeePack() {
+function setShuffleButton() {
   const btn = document.querySelector(".shuffle-btn");
   btn.addEventListener("click", () => {
-    return coffeeNameImagePass(coffeePack[randomNumber()]);
+    changeCoffeeImage(coffeePackList[getRandomNumber()]);
   });
 }
 
-function coffeeNameImagePass(coffeeName) {
-  const beansimage = document.querySelector(".beans-image");
-  beansimage.src = `images/coffee-pack-images/${coffeeName}.jpg`;
+function changeCoffeeImage(coffeeName) {
+  const beansImage = document.querySelector(".beans-image");
+  beansImage.src = `images/coffee-pack-images/${coffeeName}.jpg`;
 }
 
-randomCoffeePack();
+setShuffleButton();
