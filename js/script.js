@@ -22,6 +22,7 @@ function setShuffleButton() {
     }
     changeCoffeeImage(coffeePackList[curIndex]);
     prevIndex = curIndex;
+    confetti();
   });
 }
 
