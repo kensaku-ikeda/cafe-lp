@@ -21,6 +21,7 @@ function setShuffleButton() {
 function changeCoffeeImage(coffeeName) {
   const beansImage = document.querySelector(".beans-image");
   beansImage.src = `images/coffee-pack-images/${coffeeName}.jpg`;
+  beansImage.alt = coffeeName;
 }
 
 setShuffleButton();
