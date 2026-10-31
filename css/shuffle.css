@@ -1,20 +1,38 @@
 main {
   background-color: #7a4a28;
   width: 100%;
-  height: 700px;
+  min-height: 100vh;
+}
+
+.shuffle-header {
+  color: white;
+  text-align: center;
 }
 
 .shuffle-wrapper {
   display: flex;
+  padding-top: 100px;
+  color: white;
+  justify-content: center;
+  position: relative;
+}
+
+.shuffle-main {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 150px;
 }
 
 .beans-image {
-  width: 256px;
+  width: 300px;
 }
 
 .shuffle-btn {
   margin: 10px 0;
+  justify-content: center;
+}
+
+.shuffle-list {
+  position: absolute;
+  right: 200px;
 }
