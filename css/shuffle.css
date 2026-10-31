@@ -19,13 +19,13 @@ main {
   margin-top: 50px;
   color: white;
   justify-content: center;
-  position: relative;
 }
 
 .shuffle-main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .beans-image {
@@ -39,5 +39,6 @@ main {
 
 .shuffle-list {
   position: absolute;
-  right: 200px;
+  left: 100%;
+  white-space: nowrap;
 }
