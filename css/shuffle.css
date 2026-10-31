@@ -16,7 +16,7 @@ main {
 
 .shuffle-wrapper {
   display: flex;
-  padding-top: 100px;
+  margin-top: 50px;
   color: white;
   justify-content: center;
   position: relative;
@@ -33,7 +33,7 @@ main {
 }
 
 .shuffle-btn {
-  margin: 10px 0;
+  margin: 30px 0;
   justify-content: center;
 }
 
