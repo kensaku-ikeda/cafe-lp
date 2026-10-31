@@ -1,7 +1,12 @@
 main {
+  color: #f9f6ec;
   background-color: #7a4a28;
   width: 100%;
   min-height: 100vh;
+}
+
+.return-top {
+  padding: 10px;
 }
 
 .shuffle-header {
