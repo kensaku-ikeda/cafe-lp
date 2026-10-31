@@ -1,3 +1,5 @@
+let prevIndex = 0;
+
 const coffeePackList = [
   "bluemountain",
   "brazil",
@@ -7,14 +9,19 @@ const coffeePackList = [
   "peru",
 ];
 
-function getRandomNumber() {
+function getRandomIndex() {
   return Math.floor(Math.random() * coffeePackList.length);
 }
 
 function setShuffleButton() {
   const btn = document.querySelector(".shuffle-btn");
   btn.addEventListener("click", () => {
-    changeCoffeeImage(coffeePackList[getRandomNumber()]);
+    let curIndex = getRandomIndex();
+    while (prevIndex === curIndex) {
+      curIndex = getRandomIndex();
+    }
+    changeCoffeeImage(coffeePackList[curIndex]);
+    prevIndex = curIndex;
   });
 }
 
