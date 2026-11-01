@@ -40,5 +40,6 @@ main {
 .shuffle-list {
   position: absolute;
   left: 100%;
+  margin-left: 30px;
   white-space: nowrap;
 }
