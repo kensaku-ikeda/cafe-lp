@@ -15,7 +15,7 @@ function getRandomIndex() {
   return Math.floor(Math.random() * coffeePackList.length);
 }
 
-function imageShuffle() {
+function showNextImage() {
   let curIndex = getRandomIndex();
   while (prevIndex === curIndex) {
     curIndex = getRandomIndex();
@@ -27,7 +27,7 @@ function imageShuffle() {
 function setShuffleButton() {
   const btn = document.querySelector(".shuffle-btn");
   btn.addEventListener("click", () => {
-    const intervalId = setInterval(imageShuffle, 100);
+    const intervalId = setInterval(showNextImage, 100);
     btn.disabled = true;
     btn.textContent = "シャッフル中・・・";
     setTimeout(() => {
