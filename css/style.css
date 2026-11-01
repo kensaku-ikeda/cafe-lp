@@ -74,9 +74,14 @@ header {
   transition: all 0.3s;
 }
 
-.btn:hover {
+.btn:hover:not(:disabled) {
   background-color: #392e26;
   color: #faf6ec;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.5;
 }
 
 .container {

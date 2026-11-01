@@ -15,16 +15,27 @@ function getRandomIndex() {
   return Math.floor(Math.random() * coffeePackList.length);
 }
 
+function imageShuffle() {
+  let curIndex = getRandomIndex();
+  while (prevIndex === curIndex) {
+    curIndex = getRandomIndex();
+  }
+  changeCoffeeImage(coffeePackList[curIndex]);
+  prevIndex = curIndex;
+}
+
 function setShuffleButton() {
   const btn = document.querySelector(".shuffle-btn");
   btn.addEventListener("click", () => {
-    let curIndex = getRandomIndex();
-    while (prevIndex === curIndex) {
-      curIndex = getRandomIndex();
-    }
-    changeCoffeeImage(coffeePackList[curIndex]);
-    prevIndex = curIndex;
-    confetti();
+    const intervalId = setInterval(imageShuffle, 100);
+    btn.disabled = true;
+    btn.textContent = "シャッフル中・・・";
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.textContent = "シャッフルする";
+      clearInterval(intervalId);
+      confetti();
+    }, 3000);
   });
 }
 
