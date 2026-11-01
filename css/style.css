@@ -39,6 +39,10 @@ header {
   gap: 40px;
 }
 
+.header-nav li:hover {
+  text-decoration: underline;
+}
+
 .main-visual {
   background-image: url(../images/main-visual.jpg);
   background-size: cover;
@@ -67,11 +71,12 @@ header {
   border-radius: 32px;
   border: 2px solid #392e26;
   color: #392e26;
+  transition: all 0.3s;
 }
 
-.shuffle-link {
-  background: linear-gradient(to right, #d9a66f, #faf6ec);
-  color: #392e26;
+.btn:hover {
+  background-color: #392e26;
+  color: #faf6ec;
 }
 
 .container {
@@ -257,7 +262,7 @@ header {
 .access-info a {
   display: inline-block;
   padding-top: 30px;
-  color: #B25328;
+  color: #b25328;
   text-decoration: underline;
 }
 
