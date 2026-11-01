@@ -1,0 +1,28 @@
+{
+  "name": "cafe-lp",
+  "version": "1.0.0",
+  "description": "- 来店してほしい。理由は予約などのハードルを感じず、気軽にお店に来てほしいから。お店の雰囲気を事前に感じてもらい、いい印象をもってもらう。 - 個室の予約をページを通してしてもらう。",
+  "homepage": "https://github.com/kensaku-ikeda/cafe-lp#readme",
+  "bugs": {
+    "url": "https://github.com/kensaku-ikeda/cafe-lp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kensaku-ikeda/cafe-lp.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "globals": "^17.13.0"
+  }
+}
