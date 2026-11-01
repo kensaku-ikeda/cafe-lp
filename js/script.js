@@ -1,6 +1,8 @@
 /* global confetti */
 
 let prevIndex = 0;
+const imageChangeInterval = 100;
+const shuffleTotalTime = 3000;
 
 const coffeePackList = [
   "bluemountain",
@@ -27,7 +29,7 @@ function showNextImage() {
 function setShuffleButton() {
   const btn = document.querySelector(".shuffle-btn");
   btn.addEventListener("click", () => {
-    const intervalId = setInterval(showNextImage, 100);
+    const intervalId = setInterval(showNextImage, imageChangeInterval);
     btn.disabled = true;
     btn.textContent = "シャッフル中・・・";
     setTimeout(() => {
@@ -35,7 +37,7 @@ function setShuffleButton() {
       btn.disabled = false;
       btn.textContent = "シャッフルする";
       confetti();
-    }, 3000);
+    }, shuffleTotalTime);
   });
 }
 
