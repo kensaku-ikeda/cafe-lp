@@ -31,9 +31,9 @@ function setShuffleButton() {
     btn.disabled = true;
     btn.textContent = "シャッフル中・・・";
     setTimeout(() => {
+      clearInterval(intervalId);
       btn.disabled = false;
       btn.textContent = "シャッフルする";
-      clearInterval(intervalId);
       confetti();
     }, 3000);
   });
