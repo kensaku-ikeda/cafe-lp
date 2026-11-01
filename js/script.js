@@ -1,3 +1,5 @@
+/* global confetti */
+
 let prevIndex = 0;
 
 const coffeePackList = [
