@@ -1,6 +1,6 @@
 main {
-  color: #f9f6ec;
-  background-color: #7a4a28;
+  color: #4a3728;
+  background-color: #faf6ec;
   width: 100%;
   min-height: 100vh;
 }
@@ -10,14 +10,16 @@ main {
 }
 
 .shuffle-header {
-  color: white;
   text-align: center;
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
 }
 
 .shuffle-wrapper {
   display: flex;
-  margin-top: 50px;
-  color: white;
+  margin-top: 30px;
   justify-content: center;
 }
 
@@ -30,16 +32,40 @@ main {
 
 .beans-image {
   width: 300px;
+  border: 3px solid #4a3728;
+  border-radius: 6px;
 }
 
 .shuffle-btn {
   margin: 30px 0;
-  justify-content: center;
+  background-color: #7cb342;
+  border-color: #7cb342;
+  color: white;
+}
+
+.shuffle-btn:hover:not(:disabled) {
+  background-color: white;
+  border-color: #7cb342;
+  color: #7cb342;
 }
 
 .shuffle-list {
   position: absolute;
   left: 100%;
+  border: 3px solid #4a3728;
+  border-radius: 6px;
   margin-left: 30px;
+  padding: 10px;
   white-space: nowrap;
+  list-style: none;
+}
+
+.shuffle-list li {
+  list-style: none;
+  border-bottom: 1px solid gray;
+  padding: 6px 0;
+}
+
+.fi {
+  margin-right: 10px;
 }
