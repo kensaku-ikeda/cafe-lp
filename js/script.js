@@ -5,12 +5,12 @@ const imageChangeInterval = 100;
 const shuffleTotalTime = 3000;
 
 const coffeePackList = [
-  "bluemountain",
   "brazil",
   "colombia",
   "ethiopia",
-  "guatemala",
   "peru",
+  "bluemountain",
+  "guatemala",
 ];
 
 function getRandomIndex() {
@@ -23,6 +23,7 @@ function showNextImage() {
     curIndex = getRandomIndex();
   }
   changeCoffeeImage(coffeePackList[curIndex]);
+  highlightCountry(curIndex);
   prevIndex = curIndex;
 }
 
@@ -45,6 +46,14 @@ function changeCoffeeImage(coffeeName) {
   const beansImage = document.querySelector(".beans-image");
   beansImage.src = `images/coffee-pack-images/${coffeeName}.jpg`;
   beansImage.alt = coffeeName;
+}
+
+function highlightCountry(index) {
+  const highLight = document.querySelectorAll(".shuffle-list li");
+  highLight.forEach((light) => {
+    light.style.backgroundColor = "";
+  });
+  highLight[index].style.backgroundColor = "#7cb342";
 }
 
 setShuffleButton();
