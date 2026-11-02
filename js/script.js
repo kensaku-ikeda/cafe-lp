@@ -1,6 +1,6 @@
 /* global confetti */
 
-let prevIndex = 0;
+let prevIndex = -1;
 const imageChangeInterval = 100;
 const shuffleTotalTime = 3000;
 
