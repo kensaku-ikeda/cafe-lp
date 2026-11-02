@@ -4,6 +4,8 @@ let prevIndex = 0;
 const imageChangeInterval = 100;
 const shuffleTotalTime = 3000;
 
+// この配列とHTMLのliのリストの並び順を一致させる。
+// 理由は番号で画像とハイライトを対応させるため。
 const coffeePackList = [
   "brazil",
   "colombia",
