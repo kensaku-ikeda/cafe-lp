@@ -81,3 +81,8 @@ main {
 .fi {
   margin-right: 10px;
 }
+
+.credit {
+  color: gray;
+  text-align: right;
+}

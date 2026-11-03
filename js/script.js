@@ -4,6 +4,8 @@ let prevIndex = -1;
 const imageChangeInterval = 100;
 const shuffleTotalTime = 3000;
 
+const bell = new Audio("sounds/Bell_Accent.mp3");
+
 // この配列とHTMLのliのリストの並び順を一致させる。
 // 理由は番号で画像とハイライトを対応させるため。
 const coffeePackList = [
@@ -29,6 +31,10 @@ function showNextImage() {
   prevIndex = curIndex;
 }
 
+function playBell() {
+  bell.play();
+}
+
 function setShuffleButton() {
   const btn = document.querySelector(".shuffle-btn");
   btn.addEventListener("click", () => {
@@ -39,6 +45,7 @@ function setShuffleButton() {
       clearInterval(intervalId);
       btn.disabled = false;
       btn.textContent = "シャッフルする";
+      playBell();
       confetti();
     }, shuffleTotalTime);
   });
