@@ -1,0 +1,97 @@
+body {
+  background:
+    linear-gradient(hsl(38, 58%, 92%, 0.5), hsl(38, 58%, 92%, 0.5)),
+    url(../images/shopstyle.jpg);
+  background-size: cover;
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #392e26;
+}
+
+main {
+  border: 2px solid #392e26;
+  border-radius: 6px;
+  max-width: 1000px;
+  width: 45%;
+  margin: 5vh auto;
+  background-color: #faf6ec;
+  color: #392e26;
+}
+
+label {
+  display: block;
+  padding-bottom: 6px;
+}
+
+form {
+  padding: 30px;
+}
+
+form h2 {
+  font-size: 24px;
+}
+
+.form-title {
+  border-bottom: 2px solid #392e26;
+  padding: 30px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.form-group {
+  margin: 16px 0;
+  width: 50%;
+}
+
+.form-input {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 5px;
+  border: 1px solid #392e26;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-wrapper span {
+  margin-top: 24px;
+}
+
+.time-wrapper .form-group {
+  width: 30%;
+}
+
+.name-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.name-wrapper .form-group {
+  width: 35%;
+}
+
+.tel-group span {
+  font-size: 12px;
+}
+
+.submit-button {
+  display: block;
+  width: 50%;
+  padding: 20px 0;
+  background-color: #392e26;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.description {
+  color: #665244;
+}
