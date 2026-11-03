@@ -233,6 +233,7 @@ header {
 .access {
   height: 800px;
   background-color: #f8f3e9;
+  border-bottom: 2px solid #392e26;
 }
 
 .access-header {
@@ -269,6 +270,101 @@ header {
   padding-top: 30px;
   color: #b25328;
   text-decoration: underline;
+}
+
+/* 料金 */
+.pricing {
+  background-color: #fbf6ec;
+  padding-bottom: 20px;
+}
+
+.pricing-header {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.pricing-content {
+  display: flex;
+  gap: 50px;
+}
+
+.pricing-card {
+  background-color: ghostwhite;
+  border: 1px solid #392e26;
+  border-radius: 6px;
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+}
+
+.pricing-card p {
+  margin-top: 16px;
+}
+
+.menu li {
+  border-bottom: 2px dotted gray;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.menu span {
+  float: right;
+}
+
+.menu {
+  flex-basis: 750px;
+}
+
+.seat {
+  flex-basis: 600px;
+}
+
+.big {
+  font-size: 50px;
+}
+
+.private-room {
+  flex-basis: 600px;
+  border-color: orange;
+  background-color: #f6eddd;
+}
+
+.private-room-booking {
+  margin: 30px 0 80px 0;
+  width: 100%;
+  background-color: ghostwhite;
+  border: 1px solid #392e26;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.private-room-booking p {
+  padding: 30px 0;
+}
+
+.private-room-booking ol {
+  display: flex;
+  gap: 50px;
+}
+
+.private-room-booking a {
+  display: inline-block;
+  background-color: #b5562b;
+  border: 2px solid #b5562b;
+  color: white;
+}
+
+.private-room-booking a:hover:not(:disabled) {
+  background-color: white;
+  border: 2px solid #b5562b;
+  color: #b5562b;
 }
 
 /* フッター */
