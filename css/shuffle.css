@@ -6,7 +6,19 @@ main {
 }
 
 .return-top {
-  padding: 10px;
+  color: #faf6ec;
+  background-color: #392e26;
+  border: 1px solid #faf6ec;
+  border-radius: 16px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 12px;
+  text-align: center;
+}
+
+.return-top a {
+  display: block;
+  padding: 8px;
 }
 
 .shuffle-header {
