@@ -19,6 +19,21 @@ main {
   color: #392e26;
 }
 
+.return-top {
+  background-color: #faf6ec;
+  border: 1px solid #392e26;
+  border-radius: 16px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 12px;
+  text-align: center;
+}
+
+.return-top a {
+  display: block;
+  padding: 8px;
+}
+
 label {
   display: block;
   padding-bottom: 6px;
