@@ -35,16 +35,40 @@ main {
   justify-content: center;
 }
 
+.shuffle-side {
+  padding: 10px;
+  margin: 0 30px;
+  width: 18%;
+  border: 3px solid #392e26;
+  border-radius: 6px;
+}
+
+.shuffle-side h2 {
+  text-align: center;
+}
+
+.shuffle-side li {
+  border-bottom: 1px solid gray;
+  padding: 6px 0;
+}
+
+.coffee-description li {
+  list-style: none;
+}
+
+.coffee-description p {
+  min-height: 70px;
+}
+
 .shuffle-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .beans-image {
   width: 300px;
-  border: 3px solid #4a3728;
+  border: 3px solid #392e26;
   border-radius: 6px;
 }
 
@@ -61,21 +85,8 @@ main {
   color: #7cb342;
 }
 
-.shuffle-list {
-  position: absolute;
-  left: 100%;
-  border: 3px solid #4a3728;
-  border-radius: 6px;
-  margin-left: 30px;
-  padding: 10px;
-  white-space: nowrap;
-  list-style: none;
-}
-
 .shuffle-list li {
   list-style: none;
-  border-bottom: 1px solid gray;
-  padding: 6px 0;
 }
 
 .fi {
