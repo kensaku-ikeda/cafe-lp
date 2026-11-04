@@ -3,6 +3,10 @@
 let prevIndex = -1;
 const imageChangeInterval = 100;
 const shuffleTotalTime = 3000;
+const starMaxRating = 5;
+
+const emptyStars = "☆";
+const filledStars = "★";
 
 const bell = new Audio("sounds/Bell_Accent.mp3");
 
@@ -131,8 +135,14 @@ function displayResult() {
   profile.textContent = coffeePackList[prevIndex].profile;
   const ratesArray = Object.values(coffeePackList[prevIndex].taste);
   rates.forEach((rate, index) => {
-    rate.textContent = ratesArray[index];
+    rate.textContent = makeStarIcon(ratesArray[index]);
   });
+}
+
+// 後に文字列ではなくアイコンに変える
+function makeStarIcon(starCount) {
+  const emptyStarsCount = starMaxRating - starCount;
+  return filledStars.repeat(starCount) + emptyStars.repeat(emptyStarsCount);
 }
 
 function changeCoffeeImage(coffeeName) {
