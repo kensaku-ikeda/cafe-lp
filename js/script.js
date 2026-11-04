@@ -6,6 +6,11 @@ const shuffleTotalTime = 3000;
 
 const bell = new Audio("sounds/Bell_Accent.mp3");
 
+const btn = document.querySelector(".shuffle-btn");
+const description = document.querySelector(".coffee-description span");
+const profile = document.querySelector(".coffee-description p");
+const rates = document.querySelectorAll(".coffee-description li span");
+
 // このオブジェクトとHTMLのliのリストの並び順を一致させる。
 // 理由は番号で画像とハイライトを対応させるため。
 // 説明文は後々JSONファイルにまとめてデータ化する。
@@ -104,9 +109,6 @@ function playBell() {
 }
 
 function setShuffleButton() {
-  const btn = document.querySelector(".shuffle-btn");
-  const description = document.querySelector(".coffee-description span");
-  const profile = document.querySelector(".coffee-description p");
   btn.addEventListener("click", () => {
     const intervalId = setInterval(showNextImage, imageChangeInterval);
     btn.disabled = true;
@@ -117,11 +119,19 @@ function setShuffleButton() {
       clearInterval(intervalId);
       btn.disabled = false;
       btn.textContent = "シャッフルする";
-      description.textContent = coffeePackList[prevIndex].ja;
-      profile.textContent = coffeePackList[prevIndex].profile;
+      displayResult();
       playBell();
       confetti();
     }, shuffleTotalTime);
+  });
+}
+
+function displayResult() {
+  description.textContent = coffeePackList[prevIndex].ja;
+  profile.textContent = coffeePackList[prevIndex].profile;
+  const ratesArray = Object.values(coffeePackList[prevIndex].taste);
+  rates.forEach((rate, index) => {
+    rate.textContent = ratesArray[index];
   });
 }
 
