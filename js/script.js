@@ -3,17 +3,17 @@
 let prevIndex = -1;
 const imageChangeInterval = 100;
 const shuffleTotalTime = 3000;
-const starMaxRating = 5;
+const mugMaxRating = 5;
 
-const emptyStars = "☆";
-const filledStars = "★";
+const emptyMug = '<i class="fa-solid fa-mug-saucer empty-Mug"></i>';
+const filledMug = '<i class="fa-solid fa-mug-saucer filled-Mug"></i>';
 
 const bell = new Audio("sounds/Bell_Accent.mp3");
 
 const btn = document.querySelector(".shuffle-btn");
 const description = document.querySelector(".coffee-description span");
 const profile = document.querySelector(".coffee-description p");
-const rates = document.querySelectorAll(".coffee-description li span");
+const mugIntensities = document.querySelectorAll(".coffee-description li span");
 
 // このオブジェクトとHTMLのliのリストの並び順を一致させる。
 // 理由は番号で画像とハイライトを対応させるため。
@@ -133,16 +133,15 @@ function setShuffleButton() {
 function displayResult() {
   description.textContent = coffeePackList[prevIndex].ja;
   profile.textContent = coffeePackList[prevIndex].profile;
-  const ratesArray = Object.values(coffeePackList[prevIndex].taste);
-  rates.forEach((rate, index) => {
-    rate.textContent = makeStarIcon(ratesArray[index]);
+  const mugRatingsArray = Object.values(coffeePackList[prevIndex].taste);
+  mugIntensities.forEach((intensity, index) => {
+    intensity.innerHTML = makeMugIcon(mugRatingsArray[index]);
   });
 }
 
-// 後に文字列ではなくアイコンに変える
-function makeStarIcon(starCount) {
-  const emptyStarsCount = starMaxRating - starCount;
-  return filledStars.repeat(starCount) + emptyStars.repeat(emptyStarsCount);
+function makeMugIcon(mugCount) {
+  const emptyMugCount = mugMaxRating - mugCount;
+  return filledMug.repeat(mugCount) + emptyMug.repeat(emptyMugCount);
 }
 
 function changeCoffeeImage(coffeeName) {

@@ -60,6 +60,19 @@ main {
   min-height: 70px;
 }
 
+.rating span {
+  font-size: 24px;
+  margin-left: 18px;
+}
+
+.empty-Mug {
+  color: #bdbdbd;
+}
+
+.filled-Mug {
+  color: #392e26;
+}
+
 .shuffle-main {
   display: flex;
   flex-direction: column;
