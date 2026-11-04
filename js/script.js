@@ -3,7 +3,7 @@
 let prevIndex = -1;
 const imageChangeInterval = 100;
 const shuffleTotalTime = 3000;
-const mugMaxRating = 5;
+const mugMaxIntensity = 5;
 
 const emptyMug = '<i class="fa-solid fa-mug-saucer empty-Mug"></i>';
 const filledMug = '<i class="fa-solid fa-mug-saucer filled-Mug"></i>';
@@ -115,14 +115,11 @@ function playBell() {
 function setShuffleButton() {
   btn.addEventListener("click", () => {
     const intervalId = setInterval(showNextImage, imageChangeInterval);
-    btn.disabled = true;
-    btn.textContent = "シャッフル中・・・";
-    description.textContent = "???";
-    profile.textContent = "";
+    updateButtonState(true, "シャッフル中・・・");
+    resetResult();
     setTimeout(() => {
       clearInterval(intervalId);
-      btn.disabled = false;
-      btn.textContent = "シャッフルする";
+      updateButtonState(false, "シャッフルする");
       displayResult();
       playBell();
       confetti();
@@ -130,17 +127,30 @@ function setShuffleButton() {
   });
 }
 
+function updateButtonState(isDisabled, text) {
+  btn.disabled = isDisabled;
+  btn.textContent = text;
+}
+
+function resetResult() {
+  description.textContent = "???";
+  profile.textContent = "";
+  mugIntensities.forEach((intensity) => {
+    intensity.innerHTML = "";
+  });
+}
+
 function displayResult() {
   description.textContent = coffeePackList[prevIndex].ja;
   profile.textContent = coffeePackList[prevIndex].profile;
-  const mugRatingsArray = Object.values(coffeePackList[prevIndex].taste);
+  const mugIntensityArray = Object.values(coffeePackList[prevIndex].taste);
   mugIntensities.forEach((intensity, index) => {
-    intensity.innerHTML = makeMugIcon(mugRatingsArray[index]);
+    intensity.innerHTML = makeMugIcon(mugIntensityArray[index]);
   });
 }
 
 function makeMugIcon(mugCount) {
-  const emptyMugCount = mugMaxRating - mugCount;
+  const emptyMugCount = mugMaxIntensity - mugCount;
   return filledMug.repeat(mugCount) + emptyMug.repeat(emptyMugCount);
 }
 
