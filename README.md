@@ -42,3 +42,4 @@
 - [flag-icons](https://github.com/lipis/flag-icons)：国旗アイコン
 - [Unsplash](https://unsplash.com)：画像素材の一部
 - [OtoLogic](https://otologic.jp)：音素材(CC BY 4.0)
+- [Font Awesome](https://fontawesome.com/):アイコン素材
