@@ -5,8 +5,8 @@ const imageChangeInterval = 100;
 const shuffleTotalTime = 3000;
 const mugMaxIntensity = 5;
 
-const emptyMug = '<i class="fa-solid fa-mug-saucer empty-Mug"></i>';
-const filledMug = '<i class="fa-solid fa-mug-saucer filled-Mug"></i>';
+const emptyMug = '<i class="fa-solid fa-mug-saucer empty-mug"></i>';
+const filledMug = '<i class="fa-solid fa-mug-saucer filled-mug"></i>';
 
 const bell = new Audio("sounds/Bell_Accent.mp3");
 
