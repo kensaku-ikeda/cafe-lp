@@ -5,6 +5,10 @@ main {
   min-height: 100vh;
 }
 
+body {
+  line-height: 1.5;
+}
+
 .return-top {
   color: #faf6ec;
   background-color: #392e26;
