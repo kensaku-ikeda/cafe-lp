@@ -98,6 +98,10 @@ function getRandomIndex() {
   return Math.floor(Math.random() * coffeePackList.length);
 }
 
+function getImagePath(coffeeName) {
+  return `images/coffee-pack-images/${coffeeName}.jpg`;
+}
+
 function showNextImage() {
   let curIndex = getRandomIndex();
   while (prevIndex === curIndex) {
@@ -115,7 +119,7 @@ function playBell() {
 function preloadImage() {
   coffeePackList.forEach((coffeePack) => {
     const image = new Image();
-    image.src = `images/coffee-pack-images/${coffeePack.en}.jpg`;
+    image.src = getImagePath(coffeePack.en);
   });
 }
 
@@ -163,7 +167,7 @@ function makeMugIcon(mugCount) {
 
 function changeCoffeeImage(coffeePack) {
   const beansImage = document.querySelector(".beans-image");
-  beansImage.src = `images/coffee-pack-images/${coffeePack.en}.jpg`;
+  beansImage.src = getImagePath(coffeePack.en);
   beansImage.alt = coffeePack.ja;
 }
 
