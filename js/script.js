@@ -103,7 +103,7 @@ function showNextImage() {
   while (prevIndex === curIndex) {
     curIndex = getRandomIndex();
   }
-  changeCoffeeImage(coffeePackList[curIndex].en);
+  changeCoffeeImage(coffeePackList[curIndex]);
   highlightCountry(curIndex);
   prevIndex = curIndex;
 }
@@ -161,10 +161,10 @@ function makeMugIcon(mugCount) {
   return filledMug.repeat(mugCount) + emptyMug.repeat(emptyMugCount);
 }
 
-function changeCoffeeImage(coffeeName) {
+function changeCoffeeImage(coffeePack) {
   const beansImage = document.querySelector(".beans-image");
-  beansImage.src = `images/coffee-pack-images/${coffeeName}.jpg`;
-  beansImage.alt = coffeeName;
+  beansImage.src = `images/coffee-pack-images/${coffeePack.en}.jpg`;
+  beansImage.alt = coffeePack.ja;
 }
 
 function highlightCountry(index) {
