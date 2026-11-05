@@ -113,7 +113,7 @@ header {
 .sub-content img {
   padding: 2px;
   border: 8px solid #e8bf85;
-  box-shadow: 3px 10px 8px #999;
+  box-shadow: 3px 5px 8px #999;
   box-sizing: border-box;
   width: 100%;
 }
@@ -175,12 +175,14 @@ header {
 }
 
 .roaster-text {
-  text-align: left;
+  text-align: center;
   padding: 50px;
+  margin-left: 50px;
 }
 
 .roaster-text h2 {
-  margin: 12px 0;
+  margin: 16px 0;
+  padding-top: 12px;
 }
 
 .roaster-text a {
@@ -190,6 +192,31 @@ header {
 
 .roaster-text span {
   color: rgba(255, 0, 0, 0.634);
+  display: inline-block;
+  position: relative;
+  transform: rotate(-5deg);
+  padding: 0.5em 0.7em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #f5ebe0;
+  color: #9e2a2b;
+}
+
+.btn-uranai {
+  color: #f9f5eb;
+  border-radius: 24px;
+  background-color: #6b4a36;
+  border: 2px solid #392e26;
+  padding: 10px;
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 0.05);
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-uranai:active {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .workSpace {
