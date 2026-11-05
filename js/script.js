@@ -112,6 +112,13 @@ function playBell() {
   bell.play();
 }
 
+function preloadImage() {
+  coffeePackList.forEach((coffeePack) => {
+    const image = new Image();
+    image.src = `images/coffee-pack-images/${coffeePack.en}.jpg`;
+  });
+}
+
 function setShuffleButton() {
   btn.addEventListener("click", () => {
     const intervalId = setInterval(showNextImage, imageChangeInterval);
@@ -169,3 +176,4 @@ function highlightCountry(index) {
 }
 
 setShuffleButton();
+preloadImage();
