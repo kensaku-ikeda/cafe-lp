@@ -71,6 +71,43 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .private-room-booking {
+    font-size: 14px;
+    padding: 20px 0;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .private-room-booking p {
+    padding: 0px;
+  }
+
+  .private-room-booking ol {
+    margin: 0;
+  }
+
+  .private-room-booking a {
+    padding: 6px;
+  }
+
+  /* 料金 */
+  .pricing-card {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .pricing-card h3 {
+    font-size: 20px;
+  }
+
+  .big {
+    font-size: 32px;
+  }
+
+  .pricing-content {
+    gap: 30px;
+  }
 }
 
 /* ======================== スマホ向けの表示 ======================== */
@@ -181,6 +218,27 @@
 
   .private-room-booking {
     flex-direction: column;
+  }
+
+  .private-room-booking p {
+    font-size: 20px;
+  }
+
+  .private-room-booking ol {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu {
+    flex-basis: auto;
+  }
+
+  .seat {
+    flex-basis: auto;
+  }
+
+  .private-room {
+    flex-basis: auto;
   }
 
   /* フッター */
