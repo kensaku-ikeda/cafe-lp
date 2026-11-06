@@ -1,5 +1,5 @@
 /* タブレット向けの表示 */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   /* ヘッダー */
   .header-title {
     font-size: 12px;
@@ -46,7 +46,7 @@
 
 /* スマホ向けの表示 */
 @media (max-width: 767px) {
-  br {
+  .main-content br {
     display: none;
   }
 
@@ -80,6 +80,7 @@
 
   .main-content h2 {
     font-size: 8vw;
+    font-size: clamp(24px, 8vw, 36px);
   }
 
   /* 作業環境 */
