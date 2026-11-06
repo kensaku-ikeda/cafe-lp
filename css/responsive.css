@@ -62,9 +62,14 @@
   }
 
   /* アクセス */
+  .access-map iframe {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
 
   .access-wrapper {
     flex-direction: column;
+    gap: 20px;
   }
 }
 
