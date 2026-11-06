@@ -1,0 +1,31 @@
+/* タブレット向けの表示 */
+@media (max-width: 1024px) {
+  /* ヘッダー */
+  .header-menu {
+    font-size: 13px;
+  }
+
+  /* 作業環境 */
+
+  .feature-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 50px;
+  }
+
+  .feature {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* アクセス */
+
+  .access-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* スマホ向けの表示 */
+@media (max-width: 768px) {
+}
