@@ -1,6 +1,10 @@
 /* タブレット向けの表示 */
 @media (max-width: 1024px) {
   /* ヘッダー */
+  .header-title {
+    font-size: 12px;
+  }
+
   .header-menu {
     font-size: 13px;
   }
@@ -10,7 +14,7 @@
   .feature-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 50px 50px;
   }
 
@@ -27,5 +31,16 @@
 }
 
 /* スマホ向けの表示 */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  /* ヘッダー */
+  .header-nav {
+    display: none;
+  }
+
+  .header-menu button {
+    display: block;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+  }
 }

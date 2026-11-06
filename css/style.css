@@ -46,6 +46,10 @@ header {
   text-decoration: underline;
 }
 
+.header-menu button {
+  display: none;
+}
+
 .main-visual {
   background:
     linear-gradient(hsl(25 20% 19% / 0.1), hsl(25 20% 19% / 0.1)),
