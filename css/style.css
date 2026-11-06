@@ -311,12 +311,12 @@ header {
 .access {
   background-color: #f8f3e9;
   border-bottom: 2px solid #392e26;
-  padding-bottom: 80px;
+  padding-bottom: 150px;
 }
 
 .access-header {
   padding-top: 80px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .access-wrapper {
