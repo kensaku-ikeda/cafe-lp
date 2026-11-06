@@ -40,10 +40,10 @@
   /* 作業環境 */
   .feature-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(2, 1fr);
-    gap: 50px 50px;
     white-space: normal;
+    place-content: center;
   }
 
   .feature {
