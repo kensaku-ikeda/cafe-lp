@@ -469,8 +469,8 @@ footer {
   list-style: none;
 }
 
-.footer-list span {
-  border-bottom: 1px solid #f6eddd;
+.footer-list li:hover {
+  text-decoration: underline;
 }
 
 .copy-right {
