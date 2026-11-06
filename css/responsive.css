@@ -9,6 +9,11 @@
     font-size: 13px;
   }
 
+  /* メインビジュアル */
+  .main-visual {
+    background-position: center;
+  }
+
   /* 作業環境 */
 
   .feature-wrapper {
@@ -21,6 +26,11 @@
   .feature {
     width: 100%;
     box-sizing: border-box;
+  }
+
+  /* コーヒーセクション */
+  .roaster-card {
+    flex-direction: column;
   }
 
   /* アクセス */
@@ -42,5 +52,28 @@
     font-size: 20px;
     border: none;
     background-color: transparent;
+  }
+
+  /* 作業環境 */
+  .feature-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  /* 料金 */
+  .pricing-content {
+    flex-direction: column;
+  }
+
+  /* フッター */
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-list ul {
+    flex-direction: column;
+    margin: 0px;
   }
 }
