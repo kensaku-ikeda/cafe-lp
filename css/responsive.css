@@ -67,6 +67,10 @@
     flex-direction: column;
   }
 
+  .private-room-booking {
+    flex-direction: column;
+  }
+
   /* フッター */
   .footer-wrapper {
     flex-direction: column;
