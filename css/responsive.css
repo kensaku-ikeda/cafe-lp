@@ -1,5 +1,5 @@
-/* タブレット向けの表示 */
-@media (max-width: 1023px) {
+/* ======================== タブレット向けの表示 ======================== */
+@media (max-width: 1024px) {
   /* ヘッダー */
   .header-title {
     font-size: 12px;
@@ -18,6 +18,25 @@
     margin-bottom: 50px;
   }
 
+  /* コーヒーセクション */
+  .coffee-card-wrapper p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .coffee-card-wrapper br {
+    display: none;
+  }
+
+  .roaster-card {
+    flex-direction: column;
+  }
+
+  .roaster-text {
+    margin: 50px 0 0 0;
+    padding: 0px;
+  }
+
   /* 作業環境 */
 
   .feature-wrapper {
@@ -32,11 +51,6 @@
     box-sizing: border-box;
   }
 
-  /* コーヒーセクション */
-  .roaster-card {
-    flex-direction: column;
-  }
-
   /* アクセス */
 
   .access-wrapper {
@@ -44,12 +58,8 @@
   }
 }
 
-/* スマホ向けの表示 */
+/* ======================== スマホ向けの表示 ======================== */
 @media (max-width: 767px) {
-  .main-content br {
-    display: none;
-  }
-
   /* ヘッダー */
   .header-title {
     font-size: 8px;
@@ -81,6 +91,58 @@
   .main-content h2 {
     font-size: 8vw;
     font-size: clamp(24px, 8vw, 36px);
+  }
+
+  .main-content br {
+    display: none;
+  }
+
+  /* コーヒーセクション */
+  .content-title {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .content-heading {
+    font-size: 18px;
+  }
+
+  .coffee-card-wrapper {
+    flex-direction: column;
+  }
+
+  .coffee-card {
+    width: 100%;
+  }
+
+  .coffee-card img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .roaster-text {
+    margin: 50px 0 0 0;
+    padding: 0px;
+  }
+
+  .roaster-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .roaster-text p {
+    font-size: 16px;
+  }
+
+  .roaster-text br {
+    display: none;
+  }
+  
+  .roaster-text span {
+    font-size: 14px;
+  }
+
+  .roaster-text h2 {
+    font-size: 18px;
   }
 
   /* 作業環境 */
