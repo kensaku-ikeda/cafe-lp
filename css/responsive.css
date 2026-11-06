@@ -43,6 +43,10 @@
 /* スマホ向けの表示 */
 @media (max-width: 767px) {
   /* ヘッダー */
+  .header-title {
+    font-size: 8px;
+  }
+
   .header-nav {
     display: none;
   }
