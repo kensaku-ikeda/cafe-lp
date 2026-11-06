@@ -9,23 +9,6 @@ body {
   line-height: 1.5;
 }
 
-.return-top {
-  color: #faf6ec;
-  background-color: #392e26;
-  border: 1px solid #faf6ec;
-  border-radius: 24px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 12px;
-  text-align: center;
-}
-
-.return-top a {
-  display: block;
-  padding: 14px;
-}
-
 .shuffle-header {
   text-align: center;
   font-family: "Kaisei Decol", serif;

@@ -13,6 +13,7 @@ header {
   padding: 4px 0;
   width: 100%;
   position: fixed;
+  z-index: 10;
 }
 
 .header-wrapper {
@@ -482,4 +483,22 @@ footer {
   width: 30px;
   border-radius: 50%;
   border: 2px solid white;
+}
+
+/* 戻るボタン */
+.return-top {
+  color: #faf6ec;
+  background-color: #392e26;
+  border: 1px solid #faf6ec;
+  border-radius: 24px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 12px;
+  text-align: center;
+}
+
+.return-top a {
+  display: block;
+  padding: 14px;
 }

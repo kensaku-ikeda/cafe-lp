@@ -1,9 +1,15 @@
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 body {
   background:
     linear-gradient(hsl(38, 58%, 92%, 0.5), hsl(38, 58%, 92%, 0.5)),
     url(../images/shopstyle.jpg);
   background-size: cover;
-  font-family: "Kaisei Decol", serif;
+  font-family: "Shippori Mincho", serif;
   font-weight: 400;
   font-style: normal;
   color: #392e26;
@@ -15,23 +21,12 @@ main {
   max-width: 1000px;
   width: 45%;
   margin: 5vh auto;
-  background-color: #faf6ec;
+  background-color: hsl(43, 54%, 98%);
   color: #392e26;
 }
 
 .return-top {
-  background-color: #faf6ec;
-  border: 1px solid #392e26;
-  border-radius: 16px;
-  display: inline-block;
-  font-size: 12px;
-  margin: 12px;
-  text-align: center;
-}
-
-.return-top a {
-  display: block;
-  padding: 8px;
+  border: none;  
 }
 
 label {
