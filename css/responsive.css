@@ -108,6 +108,37 @@
   .pricing-content {
     gap: 30px;
   }
+
+  /* フッター */
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "logo list" "logo icon";
+  }
+
+  .footer-left {
+    grid-area: logo;
+  }
+
+  .footer-list li {
+    margin: 0;
+  }
+
+  .footer-list ul {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footer-center {
+    grid-area: list;
+    justify-self: end;
+  }
+
+  .footer-right {
+    grid-area: icon;
+    justify-self: end;
+  }
 }
 
 /* ======================== スマホ向けの表示 ======================== */
@@ -242,12 +273,20 @@
   }
 
   /* フッター */
-  .footer-wrapper {
-    flex-direction: column;
+  .footer-left h2 {
+    font-size: 20px;
+  }
+
+  .footer-list {
+    font-size: 16px;
   }
 
   .footer-list ul {
     flex-direction: column;
     margin: 0px;
+  }
+
+  .sns-icon {
+    margin-top: 30px;
   }
 }
