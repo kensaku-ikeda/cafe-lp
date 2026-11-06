@@ -271,28 +271,39 @@ header {
 .library {
   display: flex;
   align-items: center;
-  margin: 50px 0;
-  padding: 20px 0;
+  margin: 80px 0;
+  padding: 30px 0;
 }
 
 .library img {
   width: 50%;
-  border: 3px solid #392e26;
   border-radius: 8px;
   aspect-ratio: 16/9;
+  box-shadow: 3px 5px 8px #999;
+  box-sizing: border-box;
+  border: 8px solid #a16e00;
 }
 
-.library-text {
-  text-align: left;
+.library-title {
+  text-align: center;
   padding: 50px;
 }
 
-.library-text h2 {
-  margin: 12px 0;
+.library-title span {
+  color: #392e26;
+  padding: 10px 15px;
+  background-color: #f5ebe6;
+  border: 1px solid #333;
+  box-shadow: 4px 4px 0 #333;
 }
 
-.library-text span {
-  color: rgba(255, 0, 0, 0.634);
+.library-text h2 {
+  margin-top: 20px;
+}
+
+.library-text em {
+  color: hsl(359, 74%, 55%);
+  font-size: 22px;
 }
 
 /* アクセス */
