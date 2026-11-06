@@ -228,6 +228,7 @@
   /* 作業環境 */
 
   .feature-wrapper {
+    font-size: 12px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
