@@ -154,6 +154,10 @@
     display: none;
   }
 
+  .header-nav.open {
+    display: block;
+  }
+
   .header-menu button {
     display: block;
     font-size: 20px;
