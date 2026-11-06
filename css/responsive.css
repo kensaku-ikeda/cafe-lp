@@ -1,5 +1,5 @@
 /* ======================== タブレット向けの表示 ======================== */
-@media (max-width: 1023px) {
+@media (max-width: 1200px) {
   /* ヘッダー */
   .header-title {
     font-size: 12px;
@@ -43,12 +43,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 50px 50px;
+    white-space: normal;
   }
 
   .feature {
     aspect-ratio: auto;
     width: 100%;
     box-sizing: border-box;
+    padding: 50px;
   }
 
   .library {

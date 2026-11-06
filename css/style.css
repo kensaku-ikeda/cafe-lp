@@ -237,7 +237,7 @@ header {
 
 .feature-wrapper {
   display: flex;
-  align-items: center;
+  white-space: nowrap;
   margin: 30px 0;
   gap: 30px;
 }
@@ -245,7 +245,7 @@ header {
 .feature {
   background-color: hsl(43, 54%, 98%);
   width: 25%;
-  padding: 40px;
+  padding: 30px;
   aspect-ratio: 1;
   border-radius: 6px;
   text-align: center;
