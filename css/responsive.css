@@ -58,6 +58,11 @@
     background-color: transparent;
   }
 
+  /* メインビジュアル */
+  .main-visual {
+    background-position: 60% 0;
+  }
+
   /* 作業環境 */
   .feature-wrapper {
     display: grid;
