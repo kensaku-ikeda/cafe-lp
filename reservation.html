@@ -29,13 +29,14 @@
             以下の項目をご入力のうえ、送信してください。すべての項目が入力必須です。
           </p>
         </div>
-        <form>
+        <form action="https://ssgform.com/s/jzFoz8TzErgW" method="post">
           <h2>ご希望日時</h2>
           <div class="form-group">
             <label for="date">日付</label>
             <input
               id="date"
               class="form-input date-input"
+              name="日付"
               type="date"
               required
             />
@@ -46,6 +47,7 @@
               <input
                 id="start-time"
                 class="form-input time-input"
+                name="開始時間"
                 type="time"
                 required
               />
@@ -56,6 +58,7 @@
               <input
                 id="end-time"
                 class="form-input time-input"
+                name="終了時間"
                 type="time"
                 required
               />
@@ -68,6 +71,7 @@
               <input
                 id="last-name"
                 class="form-input name-input"
+                name="名字"
                 placeholder="例）山田"
                 type="text"
                 required
@@ -78,6 +82,7 @@
               <input
                 id="first-name"
                 class="form-input name-input"
+                name="名前"
                 placeholder="例）太郎"
                 type="text"
                 required
@@ -94,6 +99,7 @@
             <input
               id="tel"
               class="form-input tel-input"
+              name="電話番号"
               placeholder="例）090-1234-5678"
               type="tel"
               required
@@ -104,6 +110,7 @@
             <input
               id="email"
               class="form-input email-input"
+              name="メールアドレス"
               placeholder="例）sample@example.com"
               type="email"
               required
