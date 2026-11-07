@@ -1,15 +1,22 @@
-/* global confetti */
+// 外部のライブラリなので、定義エラーを回避するため
+/* global confetti */ // 紙吹雪のライブラリ
 
+// 前回の画像番号を入れる変数。まだ一度もシャッフルしていない状態を表す値として、どの画像番号とも重ならない-1を設定している。
 let prevIndex = -1;
-const imageChangeInterval = 100;
-const shuffleTotalTime = 3000;
-const mugMaxIntensity = 5;
 
+// 設定値
+const imageChangeInterval = 100; // 画像が切り替わる速度
+const shuffleTotalTime = 3000; // シャッフルの総時間
+const mugMaxIntensity = 5; // マグカップの最大数
+
+// font-awesomeのアイコン
 const emptyMug = '<i class="fa-solid fa-mug-saucer empty-mug"></i>';
 const filledMug = '<i class="fa-solid fa-mug-saucer filled-mug"></i>';
 
+// 音声の読み込み・音の遅延対策
 const bell = new Audio("sounds/Bell_Accent.mp3");
 
+// 要素の取得
 const btn = document.querySelector(".shuffle-btn");
 const description = document.querySelector(".coffee-description span");
 const profile = document.querySelector(".coffee-description p");
@@ -17,7 +24,6 @@ const mugIntensities = document.querySelectorAll(".coffee-description li span");
 
 // このオブジェクトとHTMLのliのリストの並び順を一致させる。
 // 理由は番号で画像とハイライトを対応させるため。
-// 説明文は後々JSONファイルにまとめてデータ化する。
 const coffeePackList = [
   {
     en: "brazil",
@@ -94,14 +100,17 @@ const coffeePackList = [
   },
 ];
 
+// ランダムな番号を取得する
 function getRandomIndex() {
   return Math.floor(Math.random() * coffeePackList.length);
 }
 
+// 画像のパスを返す
 function getImagePath(coffeeName) {
   return `images/coffee-pack-images/${coffeeName}.jpg`;
 }
 
+// 画像を切り替える・同じ画像が連続するのを防ぐ
 function showNextImage() {
   let curIndex = getRandomIndex();
   while (prevIndex === curIndex) {
@@ -112,10 +121,12 @@ function showNextImage() {
   prevIndex = curIndex;
 }
 
+// 音声を再生
 function playBell() {
   bell.play();
 }
 
+// すべての画像を事前に読み込む
 function preloadImage() {
   coffeePackList.forEach((coffeePack) => {
     const image = new Image();
@@ -123,6 +134,7 @@ function preloadImage() {
   });
 }
 
+// ボタンを押してから、止まるまでの動作
 function setShuffleButton() {
   btn.addEventListener("click", () => {
     const intervalId = setInterval(showNextImage, imageChangeInterval);
@@ -138,11 +150,13 @@ function setShuffleButton() {
   });
 }
 
+// ボタンの状態とボタンテキストの変化
 function updateButtonState(isDisabled, text) {
   btn.disabled = isDisabled;
   btn.textContent = text;
 }
 
+// コーヒーの特徴をリセットする
 function resetResult() {
   description.textContent = "???";
   profile.textContent = "";
@@ -151,6 +165,7 @@ function resetResult() {
   });
 }
 
+// コーヒーの特徴を画面に表示
 function displayResult() {
   description.textContent = coffeePackList[prevIndex].ja;
   profile.textContent = coffeePackList[prevIndex].profile;
@@ -160,17 +175,20 @@ function displayResult() {
   });
 }
 
+// マグカップアイコンの数を計算し、マグカップのアイコンを返す
 function makeMugIcon(mugCount) {
   const emptyMugCount = mugMaxIntensity - mugCount;
   return filledMug.repeat(mugCount) + emptyMug.repeat(emptyMugCount);
 }
 
+// 画像のsrcとalt属性を切り替える
 function changeCoffeeImage(coffeePack) {
   const beansImage = document.querySelector(".beans-image");
   beansImage.src = getImagePath(coffeePack.en);
   beansImage.alt = coffeePack.ja;
 }
 
+// コーヒー豆リストの背景をハイライトする
 function highlightCountry(index) {
   const highLight = document.querySelectorAll(".shuffle-list li");
   highLight.forEach((light) => {
@@ -179,5 +197,6 @@ function highlightCountry(index) {
   highLight[index].style.backgroundColor = "#7cb342";
 }
 
+// 関数の実行
 setShuffleButton();
 preloadImage();
