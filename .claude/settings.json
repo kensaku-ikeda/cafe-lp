@@ -4,7 +4,11 @@
       "Edit(//home/kensaku/projects/cafe-lp/**)",
       "Write(//home/kensaku/projects/cafe-lp/**)",
       "NotebookEdit",
-      "Bash",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git reset:*)",
+      "Bash(git checkout:*)",
+      "Bash(git restore:*)",
       "mcp__plugin_desktop-commander_desktop-commander__write_file",
       "mcp__plugin_desktop-commander_desktop-commander__edit_block",
       "mcp__plugin_desktop-commander_desktop-commander__move_file",
@@ -13,7 +17,11 @@
     ],
     "allow": [
       "Edit(~/.claude/projects/-home-kensaku-projects-cafe-lp/memory/**)",
-      "Write(~/.claude/projects/-home-kensaku-projects-cafe-lp/memory/**)"
+      "Write(~/.claude/projects/-home-kensaku-projects-cafe-lp/memory/**)",
+      "Bash(git log:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)"
     ]
   }
 }
