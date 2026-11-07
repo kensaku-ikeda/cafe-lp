@@ -1,0 +1,95 @@
+body {
+  background-color: #f8f3e9;
+  height: 100%;
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.shop-name {
+  color: #7b4e3f;
+  margin: 30px 0;
+}
+
+.icon-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.step {
+  display: inline-block;
+  width: 100%;
+}
+
+.border {
+  margin-top: 55px;
+  border-bottom: 2px dashed #99623b;
+  width: 50%;
+}
+
+.icon {
+  display: flex;
+  color: #ffffff;
+  background-color: #99623b;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.mail {
+  color: white;
+  background-color: #392e26;
+  box-sizing: border-box;
+  border: 1px solid #f8f3e9;
+  outline: 3px solid #392e26;
+  outline-offset: 6px;
+}
+
+.message h2 {
+  margin: 50px 0 30px 0;
+  font-size: 40px;
+}
+
+.message p {
+  line-height: 2.5;
+}
+
+.return-top {
+  color: #faf6ec;
+  background-color: #392e26;
+  border-radius: 24px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 12px;
+  text-align: center;
+}
+
+.return-top a {
+  display: block;
+  padding: 14px 24px;
+}
