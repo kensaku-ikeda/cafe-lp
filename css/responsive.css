@@ -146,16 +146,38 @@
 /* ======================== スマホ向けの表示 ======================== */
 @media (max-width: 767px) {
   /* ヘッダー */
+
   .header-title {
     font-size: 8px;
   }
 
   .header-nav {
     display: none;
+    position: absolute;
+    background-color: #99623b;
+    border: 2px solid red;
+    height: 100dvh;
+    width: 100%;
+    left: 0;
+    top: 0;
   }
 
   .header-nav.open {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body.open {
+    overflow: hidden;
+  }
+
+  .header-nav.open ul {
+    flex-direction: column;
+  }
+
+  .hamburger-btn {
+    z-index: 10;
   }
 
   .header-menu button {
