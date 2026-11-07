@@ -152,28 +152,48 @@
   }
 
   .header-nav {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    background-color: #99623b;
-    border: 2px solid red;
+    background-color: rgb(127 63 18 / 90%);
     height: 100dvh;
     width: 100%;
     left: 0;
     top: 0;
+    font-size: 30px;
+    color: #f9f6ec;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.5s ease,
+      visibility 0.5s ease;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+  }
+
+  .header-nav li:hover {
+    text-decoration: none;
+  }
+
+  .header-nav a {
+    border-bottom: 1px solid #f1e9d8;
   }
 
   .header-nav.open {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    visibility: visible;
+    opacity: 1;
   }
 
   body.open {
     overflow: hidden;
   }
 
-  .header-nav.open ul {
-    flex-direction: column;
+  body.open .hamburger-btn {
+    color: white;
   }
 
   .hamburger-btn {
